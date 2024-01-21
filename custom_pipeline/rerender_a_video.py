@@ -34,11 +34,20 @@ from diffusers.utils import BaseOutput, deprecate, logging
 from diffusers.utils.torch_utils import is_compiled_module, randn_tensor
 
 
-gmflow_dir = "/path/to/gmflow"
-sys.path.insert(0, gmflow_dir)
-from gmflow.gmflow import GMFlow  # noqa: E402
+#gmflow_dir = "/path/to/gmflow"
+#sys.path.insert(0, gmflow_dir)
+#from gmflow.gmflow import GMFlow  # noqa: E402
 
-from utils.utils import InputPadder  # noqa: E402
+#from utils.utils import InputPadder  # noqa: E402
+
+
+#gmflow_dir = "/path/to/gmflow"
+#sys.path.insert(0, gmflow_dir)
+from gmflow.gmflow.gmflow import GMFlow  # noqa: E402
+
+from gmflow.utils.utils import InputPadder  # noqa: E402
+
+
 
 
 logger = logging.get_logger(__name__)  # pylint: disable=invalid-name
